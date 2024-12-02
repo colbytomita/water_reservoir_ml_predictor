@@ -1,6 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/O6idXAzd)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13072810&assignment_repo_type=AssignmentRepo)
-
 # Final Project Report
 
 ## Running the program
@@ -60,28 +57,24 @@ The models were trained using the GridSearchCV function. The best parameters wer
 
 After finding the best parameters for each model, the models were then used to predict the res_storage values of the testing data. The models were then scored using the testing data. The models were scored using the following metrics: MAE, and MAPE.
 
-## ML Results
+## ML Results for LAKE MALOYA NR RATON NM and EAGLE NEST LAKE NR EAGLE NEST NM
 
-'''
 LAKE MALOYA NR RATON NM
 
                    Model                                                                             Best Parameters     Score       MAE      MAPE
                      SVR                                                                    {'C': 10, 'gamma': 0.01}  0.928684  0.029802   0.05093
      KNeighborsRegressor                                                                          {'n_neighbors': 5}  0.988091  0.009405  0.016399
-
-GaussianProcessRegressor {} 0.999721 0.001143 0.001964
-DecisionTreeRegressor {'max_depth': 10, 'min_samples_split': 10} 0.999922 0.00051 0.001007
-RandomForestRegressor {'max_depth': 20, 'min_samples_split': 2, 'n_estimators': 50} 0.999958 0.000365 0.000735
-MLPRegressor {'activation': 'identity', 'alpha': 0.0001, 'hidden_layer_sizes': (1,), 'solver': 'lbfgs'} 0.995796 0.004954 0.008148
+     GaussianProcessRegressor                                                                                     {}  0.999721  0.001143  0.001964
+     DecisionTreeRegressor                                                    {'max_depth': 10, 'min_samples_split': 10} 0.999922 0.00051 0.001007
+     RandomForestRegressor                                {'max_depth': 20, 'min_samples_split': 2, 'n_estimators': 50} 0.999958 0.000365 0.000735
+     MLPRegressor            {'activation': 'identity', 'alpha': 0.0001, 'hidden_layer_sizes': (1,), 'solver': 'lbfgs'} 0.995796 0.004954 0.008148
 
 EAGLE NEST LAKE NR EAGLE NEST NM
 
                    Model                                                                             Best Parameters     Score       MAE      MAPE
                      SVR                                                                    {'C': 10, 'gamma': 0.01}  0.973591  0.013467  0.021236
      KNeighborsRegressor                                                                          {'n_neighbors': 3}  0.988198  0.008962  0.015093
-
-GaussianProcessRegressor {} 0.999962 0.000345 0.000572
-DecisionTreeRegressor {'max_depth': 10, 'min_samples_split': 50} 0.998158 0.002965 0.004738
-RandomForestRegressor {'max_depth': 10, 'min_samples_split': 2, 'n_estimators': 50} 0.999966 0.000385 0.000612
-MLPRegressor {'activation': 'tanh', 'alpha': 0.0001, 'hidden_layer_sizes': (50,), 'solver': 'lbfgs'} 0.99907 0.00254 0.004143
-'''
+     GaussianProcessRegressor                                                                                        {} 0.999962 0.000345 0.000572
+     DecisionTreeRegressor                                                   {'max_depth': 10, 'min_samples_split': 50} 0.998158 0.002965 0.004738
+     RandomForestRegressor                                {'max_depth': 10, 'min_samples_split': 2, 'n_estimators': 50} 0.999966 0.000385 0.000612
+     MLPRegressor                 {'activation': 'tanh', 'alpha': 0.0001, 'hidden_layer_sizes': (50,), 'solver': 'lbfgs'} 0.99907 0.00254 0.004143
